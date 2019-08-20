@@ -22,4 +22,4 @@ def knapsack(N, W, weight, value):
 
 # デバック
 if __name__ == "__main__":
-    print(knapsack(4, 300, [10, 20, 30, 40], [15, 30, 45, 60]))
+    print(knapsack(4, 400, [50, 100, 150, 200], [30, 70, 95, 120]))
