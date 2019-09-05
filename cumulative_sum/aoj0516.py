@@ -2,8 +2,10 @@
 K = 3
 a = [2, 5, -4, 10, 3, 5, -4, 1]
 
-# K連続の累積和のリスト
-c = [sum(a[i:i + K]) for i in range(len(a) - K + 1)]
+# 累積和
+c = [sum(a[:i + 1]) for i in range(len(a) - K + 1)]
 
-c_index = c.index(max(c))
-print(a[c_index:c_index + K])
+ans = []
+for i in range(len(c)-K):
+    ans.append(c[i+K] - c[i])
+print(max(ans))
