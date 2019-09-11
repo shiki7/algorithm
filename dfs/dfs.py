@@ -9,6 +9,7 @@ k = int(input())
 
 
 def dfs(i, total):
+    # n番目まで到達したら合計がkと等しいかチェック
     if i == n:
         return total == k
     # a[i]を使う場合
