@@ -14,3 +14,9 @@ print(ans)
 tmp = list(filter(lambda x: x % 2 == 0, data))
 ans = list(map(lambda x: x * 2, tmp))
 print(ans)
+
+# 複数のリストを同時に展開する
+A = ['x', 'y', 'z']
+B = [10, 20, 30]
+for a, b in zip(A, B):
+    print(a, b)
