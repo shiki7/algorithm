@@ -20,3 +20,8 @@ A = ['x', 'y', 'z']
 B = [10, 20, 30]
 for a, b in zip(A, B):
     print(a, b)
+
+    
+#  2次元配列(print結果は同じだが、bのように書かないと代入した際に副作用が出る）
+a = [[0]*n]*n
+b = [[0 for _ in range(n)] for _ in range(n)]
