@@ -1,4 +1,4 @@
-from bisect import bisect_left
+from bisect import bisect_left, insort
 
 nums = [1,2,5,7,10,11, 32]
 
