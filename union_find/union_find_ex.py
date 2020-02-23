@@ -1,5 +1,5 @@
 # 何個の木ができるか求める問題
-
+# edgeを結合後、ルートを求めて、カウント
 
 # union find
 def find_root(x):
