@@ -1,3 +1,4 @@
+# ABC147D
 # シフト演算はnumpyのarray型を利用する
 
 import numpy as np
