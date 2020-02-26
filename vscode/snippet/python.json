@@ -14,7 +14,7 @@
 	// }
 
 	"nCr": {
-		"prefix": "ncr",
+		"prefix": "ncr comb",
 		"body": [
 			"def nCr(n, r, mod=10**9+7):",
 			"\tr = min(r, n-r)",
@@ -28,7 +28,7 @@
 	},
 
 	"gcd lcm": {
-		"prefix": "gcd",
+		"prefix": "gcd 約数",
 		"body": [
 			"def gcd(a, b):",
 			"\tif a < b:",
@@ -47,7 +47,7 @@
 	},
 
 	"is_prime": {
-		"prefix": "isprime",
+		"prefix": "isprime 素数",
 		"body": [
 			"def is_prime(n):",
 			"\tif n == 1:",
