@@ -14,7 +14,7 @@
 	// }
 
 	"nCr": {
-		"prefix": "ncr comb",
+		"prefix": "def ncr comb",
 		"body": [
 			"def nCr(n, r, mod=10**9+7):",
 			"\tr = min(r, n-r)",
@@ -28,7 +28,7 @@
 	},
 
 	"gcd lcm": {
-		"prefix": "gcd 約数",
+		"prefix": "def gcd 最大 公約数",
 		"body": [
 			"def gcd(a, b):",
 			"\tif a < b:",
@@ -46,8 +46,24 @@
 		"description": "最大公約数、最小公倍数"
 	},
 
+	"make divisors": {
+		"prefix": "def divisor 約数 リスト",
+		"body": [
+			"def make_divisors(n):",
+			"\tdivisors = []",
+			"\tfor i in range(1, int(n**0.5)+1):",
+			"\t\tif n % i == 0:",
+			"\t\t\tdivisors.append(i)",
+			"\t\t\tif i != n // i:",
+			"\t\t\t\tdivisors.append(n//i)",
+			"\treturn divisor",
+		],
+		"description": "最大公約数、最小公倍数"
+	},
+
+
 	"is_prime": {
-		"prefix": "isprime 素数",
+		"prefix": "def isprime 素数",
 		"body": [
 			"def is_prime(n):",
 			"\tif n == 1:",
@@ -58,6 +74,29 @@
 			"\treturn True",
 		],
 		"description": "素数判定"
+	},
+
+	"itertools": {
+		"prefix": "itertools 組み合わせ",
+		"body": [
+			"# 3文字の順列、組み合わせを求める",
+			"data = [1, 2, 3, 4, 5]",
+			"r = 3",
+			"",
+			"# 重複あり順列",
+			"print(list(itertools.product(data, repeat=r)))",
+			"",
+			"# 重複なし順列",
+			"print(list(itertools.permutations(data, r)))",
+			"",
+			"# 重複あり組み合わせ",
+			"print(list(itertools.combinations_with_replacement(data, r)))",
+			"",
+			"# 重複なし組み合わせ",
+			"print(list(itertools.combinations(data, r)))",
+		],
+		"description": "itertools"
 	}
+
 		
 }
