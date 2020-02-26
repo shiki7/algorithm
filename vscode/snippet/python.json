@@ -24,9 +24,9 @@
 			"\t\tdenom = denom * i % mod",
 			"\treturn numer * pow(denom, mod-2, mod) % mod"
 		],
-		"description": "combination"
+		"description": "組み合わせ(nCr)"
 	},
-  
+
 	"gcd lcm": {
 		"prefix": "gcd",
 		"body": [
@@ -43,7 +43,21 @@
 			"\t\tx = x * a[i] // gcd(x, a[i])",
 			"\treturn x"
 		],
-		"description": "Log output to console"
+		"description": "最大公約数、最小公倍数"
+	},
+
+	"is_prime": {
+		"prefix": "isprime",
+		"body": [
+			"def is_prime(n):",
+			"\tif n == 1:",
+			"\t\treturn False",
+			"\tfor k in range(2, int(math.sqrt(n)) + 1):",
+			"\t\tif n % k == 0:",
+			"\t\t\treturn False",
+			"\treturn True",
+		],
+		"description": "素数判定"
 	}
 		
 }
