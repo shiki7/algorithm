@@ -26,6 +26,10 @@ def unite(x, y):
 def same(x, y):
     return find_root(x) == find_root(y)
 
+# xが所属するグループのサイズ
+def group_size(x):
+    return size[find_root(x)]
+
 # 入力
 N, M = map(int, input().split())
 ab = [list(map(int, input().split())) for _ in range(M)]
