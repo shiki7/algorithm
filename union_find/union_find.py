@@ -48,24 +48,11 @@ size = [1] * N  # iを根とするグループのサイズ
 
 # 前処理 (問題によって、適宜変える）
 edge = [[ab[M - 1 - i][0] - 1, ab[M - 1 - i][1] - 1] for i in range(M)]
-
-res = []
-for i in range(M):
-    a = find_root(edge[i][0])
-    b = find_root(edge[i][1])
-    if a == b:
-        res.append(0)
-    else:
-        res.append(size[a] * size[b])
-        unite(a, b)
         
-# 特に条件なく、結合だけなら
-# for i in range(M):
-#     unite(edge[i][0], edge[i][1])
+# 結合
+for i in range(M):
+    unite(edge[i][0], edge[i][1])
 
 
 # 出力（問題によって適宜変える）
-ans = 0
-for i in range(M):
-    ans += res[M - 1 - i]
-    print(ans)
+
