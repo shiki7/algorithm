@@ -37,8 +37,5 @@ size = [1] * n  # iを根とするグループのサイズ
 edge = [[ab[m - 1 - i][0] - 1, ab[m - 1 - i][1] - 1] for i in range(m)]
 
 for i in range(m):
-    a = find_root(edge[i][0])
-    b = find_root(edge[i][1])
-    if a != b:
-        unite(a, b)
+    unite(edge[i][0], edge[i][1])
 print(len(set(roots()))-1)
