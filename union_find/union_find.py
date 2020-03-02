@@ -63,7 +63,8 @@ for i in range(M):
 # for i in range(M):
 #     a = find_root(edge[i][0])
 #     b = find_root(edge[i][1])
-#     unite(a, b)
+#     if a != b:
+#       unite(a, b)
 
 
 # 出力（問題によって適宜変える）
