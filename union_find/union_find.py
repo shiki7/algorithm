@@ -35,7 +35,7 @@ def roots():
     roots = []
     for i in range(N):
         roots.append(find_root(i))
-    return root
+    return roots
 
 # 入力
 N, M = map(int, input().split())
