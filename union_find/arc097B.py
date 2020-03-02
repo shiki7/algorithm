@@ -36,9 +36,7 @@ size = [1] * N  # iを根とするグループのサイズ
 
 edge = [[xy[M - 1 - i][0] - 1, xy[M - 1 - i][1] - 1] for i in range(M)]
 for i in range(M):
-    a = find_root(edge[i][0])
-    b = find_root(edge[i][1])
-    unite(a, b)
+    unite(edge[i][0], edge[i][1])
 
 ans = 0
 for i in range(N):
