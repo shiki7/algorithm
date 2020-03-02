@@ -58,6 +58,13 @@ for i in range(M):
     else:
         res.append(size[a] * size[b])
         unite(a, b)
+        
+# 特に条件なく、結合だけなら
+# for i in range(M):
+#     a = find_root(edge[i][0])
+#     b = find_root(edge[i][1])
+#     unite(a, b)
+
 
 # 出力（問題によって適宜変える）
 ans = 0
