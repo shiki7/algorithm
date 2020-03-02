@@ -61,10 +61,7 @@ for i in range(M):
         
 # 特に条件なく、結合だけなら
 # for i in range(M):
-#     a = find_root(edge[i][0])
-#     b = find_root(edge[i][1])
-#     if a != b:
-#       unite(a, b)
+#     unite(edge[i][0], edge[i][1])
 
 
 # 出力（問題によって適宜変える）
