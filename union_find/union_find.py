@@ -30,6 +30,13 @@ def same(x, y):
 def group_size(x):
     return size[find_root(x)]
 
+# rootリストを返す
+def roots():
+    roots = []
+    for i in range(N):
+        roots.append(find_root(i))
+    return root
+
 # 入力
 N, M = map(int, input().split())
 ab = [list(map(int, input().split())) for _ in range(M)]
