@@ -6,8 +6,8 @@ def find_root(x):
         return find_root(parent[x])
 
 
-# x,yの属する集合の併合
 def unite(x, y):
+    '''x,yの属する集合の併合'''
     x = find_root(x)
     y = find_root(y)
 
@@ -22,24 +22,28 @@ def unite(x, y):
                 rank[x] += 1
 
 
-# xとyが同じグループかどうか判定
 def same(x, y):
+    '''xとyが同じグループかどうか判定'''
     return find_root(x) == find_root(y)
 
-# xが所属するグループのサイズ
+
 def group_size(x):
+    '''xが所属するグループのサイズ'''
     return size[find_root(x)]
 
-# rootリストを返す
+
 def roots():
+    '''rootリストを返す'''
     roots = []
     for i in range(N):
         roots.append(find_root(i))
     return roots
 
-# グループの数
+
 def group_count():
-    return len(set(roots())
+    '''グループの数'''
+    return len(set(roots()))
+
 
 # 入力
 N, M = map(int, input().split())
@@ -52,10 +56,11 @@ size = [1] * N  # iを根とするグループのサイズ
 
 # 前処理 (問題によって、適宜変える）
 edge = [[ab[M - 1 - i][0] - 1, ab[M - 1 - i][1] - 1] for i in range(M)]
-        
+
 # 結合
 for i in range(M):
     unite(edge[i][0], edge[i][1])
+
 
 
 # 出力（問題によって適宜変える）
