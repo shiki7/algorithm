@@ -37,6 +37,10 @@ def roots():
         roots.append(find_root(i))
     return roots
 
+# グループの数
+def group_count():
+    return len(set(roots())
+
 # 入力
 N, M = map(int, input().split())
 ab = [list(map(int, input().split())) for _ in range(M)]
