@@ -56,7 +56,7 @@
 			"\t\t\tdivisors.append(i)",
 			"\t\t\tif i != n // i:",
 			"\t\t\t\tdivisors.append(n//i)",
-			"\treturn divisor",
+			"\treturn divisors",
 		],
 		"description": "最大公約数、最小公倍数"
 	},
@@ -65,6 +65,8 @@
 	"is_prime": {
 		"prefix": "def isprime 素数",
 		"body": [
+			"import math",
+			"",
 			"def is_prime(n):",
 			"\tif n == 1:",
 			"\t\treturn False",
