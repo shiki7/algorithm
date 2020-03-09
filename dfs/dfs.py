@@ -1,28 +1,18 @@
-# 部分和
-# 整数 a1, a2,....anの和をkにできるかを判定
-# 4
-# 1 2 4 7
-# 13
-n = int(input())
-a = list(map(int, input().split()))
-k = int(input())
+def dfs(pos, ~~~) {
+    // 停止条件
+    // 深さに限らず，任意の停止条件を書く
+    if pos == N: 
+        return ~~~;
 
+    // pos を進めながら（末端に進みながら）分岐処理
+    // 末端まで到達した時それぞれの分岐から値が返される
+    // for 文で書ける場合は for 文で実装
+    ret1 = dfs(pos + 1, 分岐 1)
+    ret2 = dfs(pos + 1, 分岐 2)
+    ret3 = dfs(pos + 1, 分岐 3)
+    ret4 = dfs(pos + 1, 分岐 4)
+    ...
 
-def dfs(i, total):
-    # n番目まで到達したら合計がkと等しいかチェック
-    if i == n:
-        return total == k
-    # a[i]を使う場合
-    if dfs(i+1, total + a[i]):
-        return True
-    # a[i]を使わない場合
-    if dfs(i+1, total):
-        return True
-    # kが作れない場合
-    return False
-
-
-if dfs(0, 0):
-    print('Yes')
-else:
-    print('No')
+    // それぞれの分岐からの戻り値の処理を行う関数
+    return func(ret1, ret2, ret3, ret4)
+}
