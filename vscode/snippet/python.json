@@ -171,4 +171,18 @@
 		],
 		"description": "再帰上限設定"
 	},
+
+	"dfs": {
+		"prefix": "dfs 再帰 深さ優先探索",
+		"body": [
+			"def dfs(pos, value):",
+			"\tif pos == N:",
+			"\t\treturn value",
+			"\tret1 = dfs(pos + 1, 分岐 1)",
+			"\tret2 = dfs(pos + 1, 分岐 2)",
+			"",
+			"\treturn min(ret1, ret2)"
+		],
+		"description": "dfs: 深さ優先探索"
+	},
 }
