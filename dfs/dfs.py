@@ -1,4 +1,4 @@
-def dfs(pos, ~~~) {
+def dfs(pos, ~~~):
     # 停止条件
     # 深さに限らず，任意の停止条件を書く
     if pos == N: 
@@ -15,4 +15,3 @@ def dfs(pos, ~~~) {
 
     # それぞれの分岐からの戻り値の処理を行う関数
     return func(ret1, ret2, ret3, ret4)
-}
