@@ -185,4 +185,15 @@
 		],
 		"description": "dfs: 深さ優先探索"
 	},
+
+	"累積和": {
+		"prefix": "累積 accumulate itertools",
+		"body": [
+			"import itertools",
+			"",
+			"input_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+			"ans = list(itertools.accumulate(input_list))"
+		],
+		"description": "累積和"
+	},
 }
